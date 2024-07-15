@@ -16,6 +16,7 @@ class ProjectTableSeeder extends Seeder
         $newProject->description = 'Il progetto Laravel 1 é stato fatto da luca, nichola e ciccio.';
         $newProject->group = true;
         $newProject->date = now();
+        $newProject->type_id = 2;
         $newProject->save();
 
         $newProject = new Project();
@@ -23,6 +24,7 @@ class ProjectTableSeeder extends Seeder
         $newProject->description = 'Il progetto Laravel 1 é stato fatto da luca.';
         $newProject->group = false;
         $newProject->date = now();
+        $newProject->type_id = 3;
         $newProject->save();
 
         $newProject = new Project();
@@ -30,6 +32,7 @@ class ProjectTableSeeder extends Seeder
         $newProject->description = 'Il progetto Laravel 1 é stato fatto da luca, nichola e ciccio.';
         $newProject->group = true;
         $newProject->date = now();
+        $newProject->type_id = 1;
         $newProject->save();
     }
 }

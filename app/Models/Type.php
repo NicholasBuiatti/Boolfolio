@@ -13,5 +13,6 @@ class Type extends Model
         "Name",
         "Description",
         "Icon",
+        "type_id",
     ];
 }

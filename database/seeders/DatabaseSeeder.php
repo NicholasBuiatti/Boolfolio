@@ -15,9 +15,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            //OCCHIO ALL'ORDINE IN CUI VENGONO INSERITI I DATI
             UserSeeder::class,
-            ProjectTableSeeder::class,
             TypeSeeder::class,
+            ProjectTableSeeder::class,
         ]);
     }
 }

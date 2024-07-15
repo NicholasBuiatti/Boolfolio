@@ -1,10 +1,11 @@
 <?php
+//AGGIORNO IL PERCORSO
+namespace App\Http\Controllers\Admin;
 
-namespace App\Http\Controllers;
-
+use Illuminate\Http\Request;
+//IMPORTO IL CONTROLLER PER POTERLO ESTENDERE
 use App\Http\Controllers\Controller;
 use App\Models\Type;
-use Illuminate\Http\Request;
 
 class TypeController extends Controller
 {
@@ -16,10 +17,10 @@ class TypeController extends Controller
         $types = Type::all();
 
         $data = [
-            "type" => $types
+            "types" => $types
         ];
 
-        return view("types.index", $data);
+        return view("admin.types.index", $data);
     }
 
     /**
@@ -43,7 +44,11 @@ class TypeController extends Controller
      */
     public function show(Type $type)
     {
-        //
+        $data = [
+            "type" => $type
+        ];
+
+        return view("admin.types.show", $data);
     }
 
     /**
